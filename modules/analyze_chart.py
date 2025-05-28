@@ -1,4 +1,4 @@
-import openai
+from openai import OpenAI
 from PIL import Image
 import io
 import base64
@@ -6,12 +6,12 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def analyze_chart(image_base64: str) -> str:
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4-vision-preview",
+        response = client.chat.completions.create(
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "Sei un analista tecnico esperto."},
                 {
