@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Ambiente virtuale
+.env/
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# File temporanei
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Output app o notebook
+*.ipynb_checkpoints
+*.sqlite3
+*.db
+
+# Dash assets (se dinamici)
+assets/generated/
+
+# Sistema operativo
+*.~lock.*
+ehthumbs.db
+Icon?
