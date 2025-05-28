@@ -1,0 +1,6 @@
+dash
+openai
+requests
+python-dotenv
+pillow
+tiktoken
