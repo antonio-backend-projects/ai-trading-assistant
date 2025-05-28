@@ -29,7 +29,7 @@ app.layout = html.Div([
 )
 def analyze(n_clicks, img_data, ticker):
     if not img_data or not ticker:
-        return html.Div("Carica un grafico e inserisci un ticker.", style={"color": "red", "fontWeight": "bold"})
+        return "Carica un grafico e inserisci un ticker."
 
     image_data = img_data.split(",")[1]
     image_base64 = f"data:image/png;base64,{image_data}"
@@ -41,30 +41,15 @@ def analyze(n_clicks, img_data, ticker):
 
     signal = generate_signal(tech_analysis, fundamental_summary, macro_sent)
 
-    box_style = {
-        "border": "1px solid #ccc",
-        "borderRadius": "5px",
-        "padding": "10px",
-        "marginBottom": "20px",
-        "height": "150px",
-        "overflowY": "auto",
-        "backgroundColor": "#f9f9f9",
-        "whiteSpace": "pre-wrap",
-        "fontFamily": "monospace",
-    }
-
     return html.Div([
         html.H4("📈 Analisi Tecnica"),
-        html.Div(tech_analysis, style=box_style),
-
+        html.Pre(tech_analysis),
         html.H4("💼 Analisi Fondamentale"),
-        html.Div(fundamental_summary, style=box_style),
-
+        html.Pre(fundamental_summary),
         html.H4("🌍 Sentiment Macroeconomico"),
-        html.Div(macro_sent, style=box_style),
-
+        html.Pre(macro_sent),
         html.H4("🚦 Segnale Operativo"),
-        html.Div(signal, style=box_style)
+        html.Pre(signal)
     ])
 
 if __name__ == "__main__":

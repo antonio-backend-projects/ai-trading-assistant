@@ -2,7 +2,7 @@
 
 Un'applicazione Python basata su Dash che consente di caricare grafici di trading (screenshot, immagini) e ottenere analisi tecniche, fondamentali e macroeconomiche con supporto OpenAI.
 
-![Descrizione immagine](images/Screenshot%202025-05-28%20135545.png)
+![Descrizione immagine](images/Screenshot%2025-05-28%140624.png)
 
 
 ## 🚀 Funzionalità
