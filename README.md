@@ -45,9 +45,22 @@ Crea un file `.env` nella root con:
 
 ```env
 OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+FMP_API_KEY=zFWkYJ62X25vn6hz37WTo4cPozQwLsZm
 ```
 
 > ⚠️ **Non caricare mai `.env` su GitHub!** È già incluso nel `.gitignore`.
+
+---
+
+### 📌 Come ottenere la API key di Financial Modeling Prep (FMP)
+
+1. Vai su [https://financialmodelingprep.com/developer/docs/pricing/](https://financialmodelingprep.com/developer/docs/pricing/)
+2. Registrati gratuitamente per un account.
+3. Conferma la tua email e accedi al tuo account.
+4. Nella dashboard troverai la tua API key gratuita.
+5. Copia la chiave e incollala nel file `.env` come mostrato sopra.
+
+---
 
 ### 5. Avvia l'applicazione
 
