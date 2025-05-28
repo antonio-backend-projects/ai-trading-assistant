@@ -10,7 +10,7 @@ Un'applicazione Python basata su Dash che consente di caricare grafici di tradin
 - Upload di immagini di grafici trading
 - Analisi tecnica automatizzata con modelli OpenAI
 - Estrazione di segnali operativi (buy/sell)
-- Integrazione con dati fondamentali e macroeconomici
+- Integrazione con dati fondamentali e macroeconomici [non ancora funzionante]
 - UI interattiva realizzata con Dash
 - Esecuzione **completamente locale**, chiave API OpenAI gestita tramite `.env`
 
