@@ -73,15 +73,17 @@ python app.py
 ## 📁 Struttura del progetto
 
 ```bash
-ai-trading-assistant/
-│
-├── app.py                 # Entrypoint dell'app Dash
-├── analysis.py            # Logica di analisi immagini e trading
-├── utils.py               # Funzioni di utilità
-├── .env                   # Chiave OpenAI (non tracciato)
-├── .gitignore
-├── requirements.txt
-└── README.md
+ai_trading_assistant/
+├── app.py                      # Dash frontend principale
+├── modules/
+│   ├── analyze_chart.py       # Analisi tecnica da immagine (GPT-4 Vision)
+│   ├── fundamentals.py        # Raccolta e valutazione dati fondamentali
+│   ├── macro_sentiment.py     # Analisi notizie macro/sentiment
+│   ├── decision_engine.py     # Agente LLM che genera segnali operativi
+│   └── utils.py               # Funzioni comuni (caricamento, logging)
+├── .env                       # Chiavi API (OpenAI)
+├── requirements.txt           # Dipendenze
+└── README.md                  # Istruzioni d'uso
 ```
 
 ---
